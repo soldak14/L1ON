@@ -1,0 +1,23 @@
+.block {
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid black;
+  margin: 10px;
+  width: 300px;
+  padding: 20px;
+  h3, h4
+  {
+    text-align: center;
+    margin: 0;
+  }
+  h4
+  {
+    margin-bottom: 10px;
+  }
+  img
+  {
+    display: flex;
+    margin: 0 auto;
+    max-height: 200px;
+  }
+}
