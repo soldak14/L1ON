@@ -3,6 +3,7 @@ import {LoginPopup} from "./LoginPopup";
 import {AccountView} from "./AccountView";
 import {useEffect, useState} from "react";
 import {app} from "../contexts/AppContext";
+import { Button } from "../ui/button/Button";
 
 export const LoginView = observer(() => {
     const {model} = app;
@@ -19,11 +20,11 @@ export const LoginView = observer(() => {
                     address={model.account.address}
                     p2trAddress={model.account.p2trAddress}/>
                 : <>
-                    {!loginState && <button onClick={() => {
+                    {!loginState && <Button onClick={() => {
                         setLoginState(true)
                     }}>
-                        Login
-                    </button>}
+                        Connect wallet
+                    </Button>}
                 </>
         }
         {

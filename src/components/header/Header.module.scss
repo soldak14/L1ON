@@ -1,0 +1,21 @@
+.header {
+  padding: 20px 40px 40px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 500px) {
+    padding: 15px;
+  }
+  .links_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 58px;
+    .links {
+      display: flex;
+      gap: 40px;
+      @media (max-width: 500px) {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../style/global.scss";
+
+.button {
+  background-color:$primary;
+  border-radius: 16px;
+  font-size: 14px;
+  color:$dark ;
+  display: inline-flex;
+  justify-content: center;
+  padding: 12px 19px;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}

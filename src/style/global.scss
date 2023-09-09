@@ -70,12 +70,9 @@ img {
   vertical-align: top;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:regular,500,600&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Flex:700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:600,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:500&display=swap");
 
-$fontFamily: "Roboto+Mono";
+
+$fontFamily: "Roboto Mono";
 $fontSize: 14px;
 $mainColorText:#fff;
 $primary: #ff5920;
