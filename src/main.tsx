@@ -7,6 +7,7 @@ import {ProjectPage} from "./pages/project/ProjectPage";
 import {app} from "./contexts/AppContext";
 import {InvoicesPage} from "./pages/invoices/InvoicesPage";
 import {InvoicePage} from "./pages/invoice/InvoicePage";
+import "./style/global.scss";
 
 const router = createBrowserRouter([
     {

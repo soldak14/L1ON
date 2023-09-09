@@ -1,5 +1,5 @@
 import {observer} from "mobx-react";
-import {Layout} from "../../components/Layout";
+import {Layout} from "../../components/layout/Layout";
 import {app} from "../../contexts/AppContext";
 import {useParams} from "react-router-dom";
 import {useEffect} from "react";

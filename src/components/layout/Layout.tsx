@@ -1,8 +1,9 @@
 import {ReactNode} from "react";
-import {Header} from "./header/Header";
+import {Header} from "../header/Header";
+import Styles from "./Layout.module.scss"
 
 export const Layout = ({children}: { children?: ReactNode }) => (
-    <div>
+    <div className={Styles.layout}>
         <Header/>
         <div/>
         <div>

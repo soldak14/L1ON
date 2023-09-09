@@ -1,5 +1,5 @@
 import {observer} from "mobx-react";
-import {Layout} from "../../components/Layout";
+import {Layout} from "../../components/layout/Layout";
 import {app} from "../../contexts/AppContext";
 import {Link} from "react-router-dom";
 import {getProjectPath} from "../../helpers/page_helper";
@@ -14,7 +14,7 @@ export const RootPage = observer(() => {
     }, []);
 
 
-    if (app.model.projects.items.size === 0) return <Layout>
+    if (!app.model.projects.loaded) return <Layout>
         loading...
     </Layout>
 
