@@ -1,3 +1,8 @@
+.wrapper{
+  max-width: 1252px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
 .block {
   display: inline-block;
   vertical-align: top;
@@ -18,4 +23,5 @@
     margin: 0 auto;
     max-height: 200px;
   }
+}
 }
