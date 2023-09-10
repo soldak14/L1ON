@@ -19,16 +19,18 @@ export const ProjectsItem = observer(
         <Link to={getProjectPath(id)}>
           <img src={image} />
         </Link>
-        <h3>
-          <Link to={getProjectPath(id)}>{name}</Link>
-        </h3>
-        <h4>
-          {active
-            ? "active"
-            : activeWhitelistTier
-            ? "whitelist active"
-            : "not active"}
-        </h4>
+        <div className={Styles.name}>
+          <h3>
+            <Link to={getProjectPath(id)}>{name}</Link>
+          </h3>
+          <h4>
+            {active
+              ? "active"
+              : activeWhitelistTier
+              ? "whitelist active"
+              : "not active"}
+          </h4>
+        </div>
       </div>
     );
   }

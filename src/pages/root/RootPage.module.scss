@@ -3,4 +3,17 @@
   margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
+  .list{
+    margin-top: 63px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    padding-bottom: 132px;
+    @media (max-width:1000px) {
+    grid-template-columns: 1fr 1fr; 
+    }
+    @media (max-width:670px) {
+    grid-template-columns: 1fr; 
+    }
+  }
 }
