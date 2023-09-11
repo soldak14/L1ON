@@ -28,60 +28,58 @@ export const LoginPopup = observer(({ complete }: { complete: () => void }) => {
   return (
     <div className={Styles.wallets}>
       <div className={Styles.walletBlock}>
-          <button onClick={() => complete()}>
-            <img src={close} alt="close" />
-          </button>
-          <h3 className={Styles.select}>Select a wallet</h3>
+        <button onClick={() => complete()}>
+          <img src={close} alt="close" />
+        </button>
+        <h3 className={Styles.select}>Select a wallet</h3>
         <div className={Styles.walletsList}>
           <div>
-          <WalletCard
-            icon={unisat}
-            title={"UniSat"}
-            href={
-              "https://chrome.google.com/webstore/detail/unisat-wallet/ppbibelpcjmhbdihakflkdcoccbgbkpo"
-            }
-            isInstall={!!window.unisat}
-            onLogin={() => login(wallet.unisatLogin())}
-          />
-          <h4 className={Styles.text}>unisat.io</h4>
+            <WalletCard
+              icon={unisat}
+              title={"UniSat"}
+              href={
+                "https://chrome.google.com/webstore/detail/unisat-wallet/ppbibelpcjmhbdihakflkdcoccbgbkpo"
+              }
+              isInstall={!!window.unisat}
+              onLogin={() => login(wallet.unisatLogin())}
+            />
+            <h4 className={Styles.text}>unisat.io</h4>
           </div>
           <div>
-          <WalletCard
-            icon={xverse}
-            title={"Xverse"}
-            href={
-              "https://chrome.google.com/webstore/detail/xverse-wallet/idnnbdplmphpflfnlkomgpfbpcgelopg"
-            }
-            isInstall={!!window.BitcoinProvider}
-            onLogin={() => login(wallet.xVerseLogin())}
-          />
-          <h4 className={Styles.text}>xvers.app</h4>
-
+            <WalletCard
+              icon={xverse}
+              title={"Xverse"}
+              href={
+                "https://chrome.google.com/webstore/detail/xverse-wallet/idnnbdplmphpflfnlkomgpfbpcgelopg"
+              }
+              isInstall={!!window.BitcoinProvider}
+              onLogin={() => login(wallet.xVerseLogin())}
+            />
+            <h4 className={Styles.text}>xvers.app</h4>
           </div>
           <div>
-          <WalletCard
-            icon={hiro}
-            title={"Hiro"}
-            href={
-              "https://chrome.google.com/webstore/detail/hiro-wallet/ldinpeekobnhjjdofggfgjlcehhmanlj"
-            }
-            isInstall={window.HiroWalletProvider}
-            onLogin={() => login(wallet.hiroWalletLogin())}
-          />
-          <h4 className={Styles.text}>hiro.so</h4>
+            <WalletCard
+              icon={hiro}
+              title={"Hiro"}
+              href={
+                "https://chrome.google.com/webstore/detail/hiro-wallet/ldinpeekobnhjjdofggfgjlcehhmanlj"
+              }
+              isInstall={window.HiroWalletProvider}
+              onLogin={() => login(wallet.hiroWalletLogin())}
+            />
+            <h4 className={Styles.text}>hiro.so</h4>
           </div>
           <div>
-          <WalletCard
-            icon={xverse}
-            title={"Ordinals Safe"}
-            href={
-              "https://chrome.google.com/webstore/detail/ordinalsafe/coefgobimbelhfmhkpndlddjhkphgnep"
-            }
-            isInstall={!!window.ordinalSafe}
-            onLogin={() => login(wallet.ordinalsSafeLogin())}
-          />
-          <h4 className={Styles.text}>ordinals.or</h4>
-
+            <WalletCard
+              icon={xverse}
+              title={"Ordinals Safe"}
+              href={
+                "https://chrome.google.com/webstore/detail/ordinalsafe/coefgobimbelhfmhkpndlddjhkphgnep"
+              }
+              isInstall={!!window.ordinalSafe}
+              onLogin={() => login(wallet.ordinalsSafeLogin())}
+            />
+            <h4 className={Styles.text}>ordinals.or</h4>
           </div>
         </div>
       </div>
