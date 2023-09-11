@@ -1,5 +1,5 @@
 import {observer} from "mobx-react";
-import {LoginPopup} from "./LoginPopup";
+import {LoginPopup} from "./loginPopup/LoginPopup";
 import {AccountView} from "./AccountView";
 import {useEffect, useState} from "react";
 import {app} from "../contexts/AppContext";

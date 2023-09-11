@@ -5,13 +5,14 @@ import Styles from "./RootPage.module.scss";
 import { useEffect } from "react";
 import { Banner } from "../../components/banner/Banner";
 import { ProjectsItem } from "../../components/projectsItem/ProjectsItem";
+import { Loader } from "../../ui/loader/Loader";
 
 export const RootPage = observer(() => {
   useEffect(() => {
     if (!app.model.projects.loaded) app.backend.requestProjects();
   }, []);
 
-  if (!app.model.projects.loaded) return <Layout>loading...</Layout>;
+  if (!app.model.projects.loaded) return <Layout><Loader/></Layout>;
 
   return (
     <Layout>
